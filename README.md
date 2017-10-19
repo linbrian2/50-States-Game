@@ -1,48 +1,18 @@
 # 50 States Game
-### Out: 9/15/17 | Due: 9/29/17 11:59 PM (Deadline 10/1/17 11:59 PM for 10% reduction)
 
 ## Overview
-In this project you will implement a game about the 50 states in the US.
+In this project I implemented a game about the 50 states in the US.
 
-The goal of the game is to input all 50 states within a time limit. If the user inputs all the states within the time limit, the user wins. Else, the user loses. Display the names of a state's senators when hovered over.
+The goal of the game is to input all 50 states within a time limit. If the user inputs all the states within the time limit, the user wins. If the user fails to input all the states, the user loses. Hovering over the text of state names displays the names of state senators.
 
 ## Objective
-Learn how to use Javascript to interact with the DOM. Practice using AJAX to interact with APIs.
+I created an HTML page with CSS elements. I also used Javascript to interact with the DOM, and AJAX to interact with APIs.
 
-## Grading
-This project will use a **feature based** grading system (out of 68 points).
+## Details:
+There is an input field to enter names. The start button must be clicked to start the game, in which a timer will also start counting down to 0. Typing a state's name correctly (case-insensitive) will add it to a list of successfully named states. The list is continuously updated, so the input field is cleared for each state added, allowing the user to immediately start typing a different state's name.
 
-Points are gained by implementing features.
+When the timer ends, the user can no longer use the input field, and the results will be displayed. The user's score and a list of unsuccessfully named states then appears on the page/
 
-Requirements must be followed and failure to follow them may result in a 0.
-
-## Specifications:
-
-- **[5]** Input field to enter states. Input MUST be case insensitive.
-    + **[3]** State should be submitted when full state is typed. No need to hit enter.
-- **[10]** Display a continuously updated list of states the user has inputed correctly.
-- **[10]** Timer set to 20 seconds displayed prominently and counts down every second. (Note: We know you are going to want to test with more than 20 seconds, but please make sure that it is 20 seconds when you submit. This will make grading easier.)
-- When timer ends:
-    - **[5]** Disable input field
-    - **[10]** Display score (states correct / total states)
-    - **[10]** Display which states the user did not get separately
-- If user finishes before timer ends:
-    - **[5]** Stop timer
-    - **[3]** Display "You win!" or some clear indication that the user has won.
-- **[15]** If a user hovers over any state name on the screen at any point, you should display the names of the state's senators. You can choose how to display the names, but it should be easily visible.   
-
-## Tips:
-
-Use the **Sunlight Foundation's Congress API** to get senator data.
+If a user hovers over any state name on the screen at any point, the names of the state's senators will be shown. This is done through retrieving data from the Sunlight Foundation API through AJAX.
 
 Documentation for the API can be found here: [Sunlight Foundation API](https://sunlightlabs.github.io/congress/legislators.html)
-
-This URL should help you out:
-https://congress.api.sunlightfoundation.com/legislators?state=MD&chamber=senate
-
-
-## Code Distribution
-Clone the project folder located in this directory.
-
-## Submission
-Please zip up your `index.html` and `index.js` and submit on the [submit server](submit.cs.umd.edu).
