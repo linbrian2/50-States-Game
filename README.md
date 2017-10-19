@@ -5,7 +5,7 @@ In this project I implemented a game about the 50 states in the US.
 
 The goal of the game is to input all 50 states within a time limit. If the user inputs all the states within the time limit, the user wins. If the user fails to input all the states, the user loses. Hovering over the text of state names displays the names of state senators.
 
-## Objective
+## Implementation
 I created an HTML page with CSS elements. I also used Javascript to interact with the DOM, and AJAX to interact with APIs.
 
 ## Details:
